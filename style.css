@@ -1,0 +1,457 @@
+body {
+  margin: 0;
+  padding: 0px;
+  background-color: black;
+  color: white;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  padding: 0px 20px;
+}
+/* HEADER */
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  align-items: center;
+  height: 40px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+header #logo img {
+  border-radius: 20px;
+}
+
+header #links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+#links .events-box {
+  position: relative;
+}
+
+
+#links .events-box .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  float: left;  
+  padding: 5px 5px;
+  box-shadow: 0px 2px 5px 0px rgb(0,0,0,0.5);
+  z-index: 1;
+}
+
+#links .events-box .dropdown-content a {
+  padding: 7px 7px;
+  color: white;
+  display: block;
+  font-weight: 700;
+}
+
+.events-box .dropdown-content a:hover {
+  background-color: black;
+  border-radius: 7px;
+}
+
+#links .events-box:hover .dropdown-content {
+  display: block;
+}
+
+header #links a:hover,
+header #links .active {
+  color: white;
+}
+
+header #links a {
+  color: greenyellow;
+  text-decoration: none;
+  text-wrap: nowrap;
+  transition: 0.3s ease;
+  padding: 0px 20px;
+}
+
+/* header #links a .active::after {
+  content: "";
+  width: 10%;
+  height: 5px;
+  background-color: greenyellow;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+} */
+
+.slide-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  animation: animate 16s ease-in-out infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  
+}
+
+@keyframes animate {
+  0%, 100% {
+    background-image: url(./img/wedding/wedding-couple.jpg);
+  }
+  20% {
+    background-image: url(./img/wedding/wedding001.jpg);
+  }
+  40% {
+    background-image: url(./img/wedding/wedding1.jpg);
+  }
+  60% {
+    background-image: url(./img/wedding/wedding2.jpg);
+  }
+  80% {
+    background-image: url(./img/wedding/wedding3.jpg);
+  }
+}
+
+
+#banner {
+  height: 60vh;
+  width: 100%;
+  background-image: url('img/wedding/wedding-couple.jpg');
+  background-color: whitesmoke;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner h1,
+#banner p {
+  color: black;
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  /* padding-top: 50px; */
+}
+
+#banner h1 {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: brown;
+}
+
+#services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px 50px 0px;
+  border-bottom: 1px solid rgb(90, 97, 75);
+}
+
+#services div {
+  height: 250px;
+  width: 100%;
+  margin: 0px 10px;
+  text-align: center;
+  text-shadow: 5px 2px black;
+}
+
+#services div:hover {
+  box-shadow: 1px 1px 10px 1px rgb(255, 255, 255);
+}
+
+#services .wedding {
+  background-image: url('img/wedding/wedding1.jpg');
+}
+
+#services .birthday {
+  background-image: url('img/birthday/cake3.jpg');
+}
+
+#services .family {
+  background-image: url(./img/family/fam1b.jpg);
+}
+
+#services .wedding,
+#services .birthday,
+#services .family {
+  background-size: cover;
+  background-color: black;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#services .wedding a,
+#services .birthday a,
+#services .family a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800; 
+  color: white;
+}
+
+#video {
+  height: 400px;
+  width: auto;
+}
+
+#video video {
+  height: 100%;
+  width: 100%;
+}
+
+#gallery {
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery #wedding,
+#gallery #birthday,
+#gallery #frame {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#gallery #wedding div,
+#gallery #birthday div,
+#gallery #frame div {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#gallery #wedding img,
+#gallery #birthday img,
+#gallery #frame img  {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+footer {
+  position: static;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: center;
+  border-top: 1px solid rgb(72, 72, 72);
+}
+
+footer #social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer #social h4 {
+  font-size: 14px;
+  color: white;
+  padding-right: 30px;
+}
+
+footer #social div {
+  height: 30px;
+  width: 30px;
+  padding: 0 10px;
+}
+
+footer #social img {
+  max-height: 100px;
+  max-width: 100%;
+}
+
+footer #social .twitter {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  border-top: 1px solid rgb(72, 72, 72);
+}
+
+
+
+/* Contact */
+#contact-banner {
+  background-image: url(./img/frame/frame8.jpg);
+  background-size: cover;
+  padding: 20px 10px 150px 10px;
+  background-color: black;
+  background-position-y: bottom;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 20px 40px 20px;
+}
+
+.location {
+padding: 10px;
+color: yellowgreen;
+font-size: 20px;
+}
+
+.form {
+  border: 1px solid white;
+  padding: 15px 15px;
+}
+
+
+
+/* Events */
+
+.event-h1 {
+  font-size: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-shadow: 4px 1px yellowgreen;
+  padding: 30px 5px 10px 5px;
+}
+ 
+#wedding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: auto;
+}
+
+#wedding .joe,
+#wedding .jane,
+#wedding .others {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+  width: auto;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+#wedding .img-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-box div {
+  height: 300px;
+  width: auto;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+.img-box div:hover {
+  box-shadow: 1px 1px 10px 1px rgb(255, 255, 255);
+}
+
+.img-box img {
+  height: 100%;
+  width: 100%;
+}
+
+#wedding .joe h3,
+#wedding .jane h3,
+#wedding .others h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+#birthday .general {
+  width: auto;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+#birthday .img-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#birthday .general h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+#family .genearl-family {
+  width: auto;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+#family .img-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#family .general-family h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#other-services .frame {
+  width: auto;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+#other-services .img-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#other-services .frame h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+
+
+/* Recent Work */
+
+
+
