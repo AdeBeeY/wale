@@ -155,7 +155,7 @@ header #links a {
 }
 
 
-#banner {
+/* #banner {
   height: 60vh;
   width: 100%;
   background-image: url('img/wedding/wedding-couple.jpg');
@@ -171,14 +171,13 @@ header #links a {
   max-width: 60%;
   text-align: center;
   margin: 0 auto;
-  /* padding-top: 50px; */
 }
 
 #banner h1 {
   padding-top: 100px;
   padding-bottom: 20px;
   color: brown;
-}
+} */
 
 
 
@@ -480,18 +479,71 @@ footer #social .twitter {
 
 /* Recent Work */
 
+.banner.recent {
+  background-image: url('./img/banner/banner2.png');
+  height: 15vh;
+}
+
+.span2.recent {
+  font-size: 25px;
+}
+
+
 
 /* About */
+#about-banner {
+  background-image: url(./img/banner/banner3.jpg);
+}
+
+#about-banner h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+}
+
+marquee {
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#about {
+  background-color: white;
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .about-h1 {
+  text-align: justify;
+  color: black;
+  text-shadow: 2px 1px rgb(48, 240, 10);
+}
+
+#about p {
+  color: black;
+  width: 70%;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+}
 
 
 
 /* Contact */
-#contact-banner {
-  background-image: url(./img/frame/frame8.jpg);
+#contact-banner,
+#about-banner {
   background-size: cover;
   padding: 20px 10px 150px 10px;
   background-color: black;
   background-position-y: bottom;
+}
+
+#contact-banner {
+  background-image: url(./img/frame/frame8.jpg);
 }
 
 
