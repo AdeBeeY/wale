@@ -148,7 +148,7 @@ header #links a {
 
 .homepage {
   position: fixed;
-  bottom: 10px;
+  bottom: 0;
   right: 30px;
 }
 
@@ -156,8 +156,8 @@ header #links a {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
 }
 
 .whatsapp img {
@@ -589,4 +589,83 @@ button {
 button:hover {
   background-color: black;
   color: white;
+}
+
+
+
+/* Start Media Querry */
+
+@media (max-width:799px) {
+ 
+ /* Home Page */
+  .banner {
+      z-index: 5;
+  }
+
+    .slide-box {
+      top: 200px;
+      height: 70vh;
+  }
+
+  .whatsapp {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 100px;
+    width: 100px;
+  }
+
+
+  /* Event Page */
+      #services {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .img-box div {
+      height: 150px;
+      padding: 20px 5px;
+  }
+
+
+  /* Recent Work Page */
+
+    .banner.recent {
+      height: 10vh;
+  }
+
+
+  /* About Page */
+
+    #contact-banner, #about-banner {
+      padding: 5px 5px;
+      height: 20vh;
+  }
+
+  #about-banner h1, #contact-banner h1 {
+    font-size: 40px;
+  }
+
+  #about {
+    padding: 20px 0px;
+  }
+
+  #about .about-h1 {
+    font-size: 25px;
+  }
+
+
+  /* Contact Page */
+
+    .msg h2 {
+      font-size: 25px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 40px 10px;
+  }
+
 }
