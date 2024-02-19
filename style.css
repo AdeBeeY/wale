@@ -252,6 +252,7 @@ footer #social .twitter {
   margin: 0px 10px;
   text-align: center;
   text-shadow: 5px 2px black;
+  padding: 10px;
 }
 
 #services div:hover {
@@ -294,12 +295,12 @@ footer #social .twitter {
   color: white;
 }
 
-#video {
+.img-box .video {
   height: 400px;
   width: auto;
 }
 
-#video video {
+video {
   height: 100%;
   width: 100%;
 }
@@ -679,6 +680,9 @@ button:hover {
 /* Start Media Querry */
 
 @media (max-width:677px) {
+
+  /* Homepage */
+
   header #links {
     flex-direction: column;
     justify-content: flex-start;
@@ -741,6 +745,52 @@ button:hover {
     font-weight: 600;
     font-size: 16px;
     line-height: 15px;
+  }
+
+
+
+  /* Events */
+  
+  #services {
+    flex-wrap: wrap;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 20px;
+  }
+  
+  #services div {
+    height: 200px;
+    width: 200px;
+    margin: 10px 10px;
+    padding: 10px;
+  }
+
+  .event-h1 {
+    font-size: 30px;
+  }
+
+  #wedding .joe h3,
+  #wedding .jane h3,
+  #wedding .others h3,
+  #birthday .general h3,
+  #family .general-family h3,
+  #other-services .frame h3 {
+    font-size: 20px;
+  }
+
+  #wedding,
+  #birthday,
+  #family,
+  #other-services {
+    padding: 10px;
+  }
+
+  #wedding .joe,
+  #wedding .jane,
+  #wedding .others,
+  #birthday .general,
+  #family .general-family,
+  #other-services .frame {
+    padding-bottom: 30px;
   }
 
 }
