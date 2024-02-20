@@ -598,198 +598,135 @@ button:hover {
 }
 
 
+/* @media screen and (min-width: 799px) {
+  body {
+    background-color: lightgreen;
+  }
+}
 
-/* Start Media Query for Ipad */
+@media screen and (max-width: 477px) {
+  body {
+    background-color: rgb(7, 7, 236);
+  }
+} */
 
-@media (max-width:799px) {
+/* Start Media Querry for Mobile Phones */
  
-  /* Home Page */
-   .banner {
-       z-index: 5;
-   }
- 
-     .slide-box {
-       top: 200px;
-       height: 70vh;
-   }
- 
-   .whatsapp {
-     position: absolute;
-     bottom: 0px;
-     right: 0px;
-     height: 100px;
-     width: 100px;
-   }
- 
- 
-   /* Event Page */
-       #services {
-         padding: 20px 0px 20px 0px;
-     }
- 
-     .img-box div {
-       height: 150px;
-       padding: 20px 5px;
-   }
- 
- 
-   /* Recent Work Page */
- 
-     .banner.recent {
-       height: 10vh;
-   }
- 
- 
-   /* About Page */
- 
-     #contact-banner, #about-banner {
-       padding: 5px 5px;
-       height: 20vh;
-   }
- 
-   #about-banner h1, #contact-banner h1 {
-     font-size: 40px;
-   }
- 
-   #about {
-     padding: 20px 0px;
-   }
- 
-   #about .about-h1 {
-     font-size: 25px;
-   }
- 
- 
-   /* Contact Page */
- 
-     .msg h2 {
-       font-size: 25px;
-   }
- 
-   .contact {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding: 10px 10px 40px 10px;
-   }
- 
+@media screen and (max-width: 477px) {
+  .whatsapp {
+    left: 0;
+    height: 150px;
+    width: 150px;
+  }
+
+ header #links {
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   position: fixed;
+   top: 0;
+   right: -300px;
+   height: 100vh;
+   width: 150px;
+   background-color: black;
+   z-index: 55;
+   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+   padding: 40px 0 0 10px;
+   transition: 0.3s;
+ }
+
+ header #links.active {
+   right: 0px;
+ }
+
+ #mobile,
+ #close {
+   display: flex;
+   align-items: center;
+ }
+
+ #mobile i {
+   color: rgb(173, 255, 47);
+   font-size: 25px;
+   padding-right: 20px;
+ }
+
+ #links a,
+ .events-box {
+   margin-bottom: 10px;
+ }
+
+ #close {
+   position: absolute;
+   margin-top: 10px;
+   top: 0;
+   font-size: 20px;
+ }
+
+
+ /* Adjust the Events dropDown list */
+ #links .events-box .dropdown-content {
+   background-color: black;
+   margin: 0;
+   padding: 5px;
+   margin-left: -30px;
+   border-radius: 10px;
+ }
+ .events-box .dropdown-content a:hover {
+   background-color: white; 
+ }
+ #links .events-box .dropdown-content a {
+   color: rgb(173, 255, 47);
+   padding: 4px 4px;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 15px;
  }
  
- /* Start Media Querry for Mobile Phones */
- 
- @media (max-width:477px) {
-   header #links {
-     flex-direction: column;
-     justify-content: flex-start;
-     align-items: flex-start;
-     position: fixed;
-     top: 0;
-     right: -300px;
-     height: 100vh;
-     width: 150px;
-     background-color: black;
-     z-index: 55;
-     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-     padding: 40px 0 0 10px;
-     transition: 0.3s;
-   }
- 
-   header #links.active {
-     right: 0px;
-   }
- 
-   #mobile,
-   #close {
-     display: flex;
-     align-items: center;
-   }
- 
-   #mobile i {
-     color: rgb(173, 255, 47);
-     font-size: 25px;
-     padding-right: 20px;
-   }
- 
-   #links a,
-   .events-box {
-     margin-bottom: 10px;
-   }
- 
-   #close {
-     position: absolute;
-     margin-top: 10px;
-     top: 0;
-     font-size: 20px;
-   }
  
  
-   /* Adjust the Events dropDown list */
-   #links .events-box .dropdown-content {
-     background-color: black;
-     margin: 0;
-     padding: 5px;
-     margin-left: -30px;
-     border-radius: 10px;
-   }
-   .events-box .dropdown-content a:hover {
-     background-color: white; 
-   }
-   #links .events-box .dropdown-content a {
-     color: rgb(173, 255, 47);
-     padding: 4px 4px;
-     font-weight: 600;
-     font-size: 16px;
-     line-height: 15px;
-   }
+ 
+ /* Events */
    
-   
-   
-   
-   /* Events */
-     
-   #services {
-     flex-wrap: wrap;
-     padding: 20px 0px 20px 0px;
-     margin-bottom: 20px;
-   }
-   
-   #services div {
-     height: 200px;
-     width: 200px;
-     margin: 10px 10px;
-     padding: 10px;
-   }
- 
-   .event-h1 {
-     font-size: 30px;
-   }
- 
-   #wedding .joe h3,
-   #wedding .jane h3,
-   #wedding .others h3,
-   #birthday .general h3,
-   #family .general-family h3,
-   #other-services .frame h3 {
-     font-size: 20px;
-   }
- 
-   #wedding,
-   #birthday,
-   #family,
-   #other-services {
-     padding: 10px;
-   }
- 
-   #wedding .joe,
-   #wedding .jane,
-   #wedding .others,
-   #birthday .general,
-   #family .general-family,
-   #other-services .frame {
-     padding-bottom: 30px;
-   }
-   
- 
+ #services {
+   flex-wrap: wrap;
+   padding: 20px 0px 20px 0px;
+   margin-bottom: 20px;
  }
  
+ #services div {
+   height: 200px;
+   width: 200px;
+   margin: 10px 10px;
+   padding: 10px;
+ }
+
+ .event-h1 {
+   font-size: 30px;
+ }
+
+ #wedding .joe h3,
+ #wedding .jane h3,
+ #wedding .others h3,
+ #birthday .general h3,
+ #family .general-family h3,
+ #other-services .frame h3 {
+   font-size: 20px;
+ }
+
+ #wedding,
+ #birthday,
+ #family,
+ #other-services {
+   padding: 10px;
+ }
+
+ #wedding .joe,
+ #wedding .jane,
+ #wedding .others,
+ #birthday .general,
+ #family .general-family,
+ #other-services .frame {
+   padding-bottom: 30px;
+ }
+}
