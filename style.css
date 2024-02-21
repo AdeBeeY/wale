@@ -251,6 +251,7 @@ footer #social .twitter {
   text-align: center;
   text-shadow: 5px 2px black;
   padding: 10px;
+  border-radius: 10px;
 }
 
 #services div:hover {
@@ -332,6 +333,7 @@ video {
   width: auto;
   padding: 20px 10px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .img-box div:hover {
@@ -341,6 +343,7 @@ video {
 .img-box img {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 
 #wedding .joe h3,
@@ -462,14 +465,13 @@ marquee {
 #about {
   background-color: white;
   width: 100%;
-  padding: 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #about .about-h1 {
-  text-align: justify;
   color: black;
   text-shadow: 2px 1px rgb(48, 240, 10);
 }
@@ -540,8 +542,8 @@ form {
 
 form div {
   margin: 20px;
-  min-height: 15px;
-  height: 55px;
+  min-height: 20px;
+  height: 70px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -553,10 +555,6 @@ form textarea,
   display: block;
 }
 
-form .name label {
-  text-wrap:nowrap
-}
-
 form label {
   font-size: 18px;
   color: yellowgreen;
@@ -566,7 +564,7 @@ form input,
 select {
   display: inline-block;
   width: 100%;
-  height: 30px;
+  height: 35px;
   border: 1px solid yellowgreen;
   color: black;
   font-size: 16px;
@@ -575,6 +573,11 @@ select {
   line-height: 26px;
   text-align: start;
   margin-top: 5px;
+}
+
+form #wedding-date,
+form option {
+  height: 35px;
 }
 
 form label span {
@@ -598,7 +601,6 @@ button:hover {
 }
 
 /* Start Media Query for Ipad */
-
 @media screen and (max-width: 900px) {
  
   /* Home Page */
@@ -613,18 +615,31 @@ button:hover {
  
    .whatsapp {
      right: 0px;
-     height: 100px;
-     width: 100px;
+     height: 70px;
+     width: 70px;
    }
    /* Event Page */
-       #services {
-         padding: 20px 0px 20px 0px;
-     }
+     #services {
+      flex-wrap: wrap;
+  }
+
+     #services div {
+      height: 250px;
+      width: 250px;
+      margin: 10px 10px;
+  }
  
-     .img-box div {
-       height: 150px;
-       padding: 20px 5px;
-   }
+  .event-h1 {
+    font-size: 40px;
+    padding: 10px 5px 10px 5px;
+}
+    
+   .img-box div {
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+}
+
    /* Recent Work Page */
  
      .banner.recent {
@@ -639,10 +654,6 @@ button:hover {
  
    #about-banner h1, #contact-banner h1 {
      font-size: 40px;
-   }
- 
-   #about {
-     padding: 20px 0px;
    }
  
    #about .about-h1 {
@@ -669,8 +680,8 @@ button:hover {
 @media screen and (max-width: 577px) {
   .whatsapp {
     left: 0;
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 50px;
   }
 
  header #links {
@@ -717,7 +728,6 @@ button:hover {
    font-size: 20px;
  }
 
-
  /* Adjust the Events dropDown list */
  #links .events-box .dropdown-content {
    background-color: black;
@@ -737,26 +747,22 @@ button:hover {
    line-height: 15px;
  }
  
- 
- 
- 
- /* Events */
-   
+ /* Events */   
  #services {
    flex-wrap: wrap;
    padding: 20px 0px 20px 0px;
-   margin-bottom: 20px;
  }
  
  #services div {
-   height: 200px;
-   width: 200px;
-   margin: 10px 10px;
+   height: 120px;
+   width: 120px;
+   margin: 10px 5px;
    padding: 10px;
  }
 
  .event-h1 {
-   font-size: 30px;
+   font-size: 25px;
+   padding: 5px;
  }
 
  #wedding .joe h3,
@@ -766,6 +772,7 @@ button:hover {
  #family .general-family h3,
  #other-services .frame h3 {
    font-size: 20px;
+   margin: 0;
  }
 
  #wedding,
@@ -783,4 +790,63 @@ button:hover {
  #other-services .frame {
    padding-bottom: 30px;
  }
+
+ .img-box .video {
+    height: 200px;
+    width: auto;
+  }
+
+  .back-to-top {
+    padding: 7px 10px;
+  }
+
+  footer #social h4 {
+    font-size: 12px;
+    padding-right: 5px;
+  }
+
+  /* RECENT WORK */
+  .banner h1 {
+    display: none;
+  }
+  .banner .ban {
+    font-size: 25px;
+  }
+  .ban.span2 {
+    padding-left: 0px;
+  }
+
+  .banner.recent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 10px;
+  }
+
+  /* ABOUT */
+  #contact-banner, #about-banner {
+    height: 10vh;
+  }
+  #about-banner h1, #contact-banner h1 {
+    font-size: 30px;
+  }
+  #about p {
+    width: 85%;
+  }
+  #about .about-h1 {
+    margin: 0;
+  }
+
+  /* CONTACT */
+  .msg {
+    width: 85%;
+  }
+  form {
+    padding: 10px;
+    width: 80%;
+    margin: 5px auto;
+    margin-left: 10px;
+  }
+
 }
