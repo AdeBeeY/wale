@@ -46,7 +46,8 @@
     <p>Fill out the contact form below and I’ll get back to you within a couple of days (usually sooner), or if you prefer drop me an email or message on social media!</p>
   </div>
   
-  <form action="https://httpbin.org/post" method="post"> 
+  <div id="info">
+    <form action="https://httpbin.org/post" method="post"> 
     <div>
       <label for="first_name">First Name: <span>(required)</span></label>
       <input type="text" id="first_name" name="first_name" autocomplete="given-name" placeholder="First Name">
@@ -89,13 +90,13 @@
 
     
     <label id="textarea" for="more-info">Message: Any other information you would like to share?</label>
-    <textarea rows="10" cols="40" name="more-info" id="more-info"></textarea>
+    <textarea rows="10" name="more-info" id="more-info"></textarea>
   
       
     <button class="Submit">Submit</button>
-  </form>
+    </form>
 
-  <div class="contact">
+    <div class="contact">
     <div class="studio-box">
       <h3>The Studio</h3>
       <div class="studio">
@@ -109,6 +110,7 @@
 
     <div class="location">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193147.27930895932!2d-74.00540027972552!3d40.85154321088468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28b553a697cb1%3A0x556e43a78ff15c77!2sBronx%2C%20NY%2C%20USA!5e0!3m2!1sen!2sch!4v1707755736577!5m2!1sen!2sch" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     </div>
   </div>
   
