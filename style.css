@@ -9,7 +9,6 @@ body {
 }
 
 /* HEADER */
-
 header {
   background-color: black;
   display: flex;
@@ -221,10 +220,7 @@ footer #social .twitter {
   border-top: 1px solid rgb(72, 72, 72);
 }
 
-
-
 /* Events */
-
 .event-h1 {
   font-size: 50px;
   margin: 0;
@@ -245,7 +241,7 @@ footer #social .twitter {
 }
 
 #services div {
-  height: 250px;
+  height: 300px;
   width: 100%;
   margin: 0px 10px;
   text-align: center;
@@ -321,7 +317,10 @@ video {
   padding-bottom: 60px;
 }
 
-#wedding .img-box {
+#wedding .img-box,
+#birthday .img-box,
+#family .img-box,
+#other-services .img-box {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -329,7 +328,7 @@ video {
 }
 
 .img-box div {
-  height: 300px;
+  height: 400px;
   width: auto;
   padding: 20px 10px;
   cursor: pointer;
@@ -360,13 +359,6 @@ video {
   padding-bottom: 60px;
 }
 
-#birthday .img-box {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 #birthday .general h3 {
   color: white;
   text-align: center;
@@ -379,13 +371,6 @@ video {
   padding-bottom: 60px;
 }
 
-#family .img-box {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 #family .general-family h3 {
   color: white;
   text-align: center;
@@ -396,13 +381,6 @@ video {
   width: auto;
   height: 100%;
   padding-bottom: 60px;
-}
-
-#other-services .img-box {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 #other-services .frame h3 {
@@ -426,8 +404,6 @@ video {
   transition: 0.3s ease-in-out;
 }
 
-
-
 /* Recent Work */
 .banner.recent {
   background-image: url('./img/banner/banner2.png');
@@ -437,8 +413,6 @@ video {
 .span2.recent {
   font-size: 25px;
 }
-
-
 
 /* About */
 #about-banner {
@@ -484,8 +458,6 @@ marquee {
   text-align: justify;
 }
 
-
-
 /* Contact */
 #contact-banner,
 #about-banner {
@@ -504,7 +476,7 @@ marquee {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width:70%;
   margin: 10px auto;
 }
 
@@ -521,23 +493,29 @@ marquee {
   text-align: justify;
 }
 
-.contact {
+#info {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding: 10px 20px 40px 20px;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 50px auto;
 }
 
-.location {
-  padding: 10px;
-  color: yellowgreen;
-  font-size: 20px;
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
 }
+  iframe,
+  .location {
+    width: 100%;
+    height: 500px;
+  }
 
 form {
   padding: 20px;
-  width: 70%;
-  margin: 20px auto;
+  width: 40%;
 }
 
 form div {
@@ -553,6 +531,7 @@ form textarea,
 #textarea {
   margin: 5px 5px 5px 19px;
   display: block;
+  width: 93%;
 }
 
 form label {
@@ -601,7 +580,7 @@ button:hover {
 }
 
 /* Start Media Query for Ipad */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1030px) {
  
   /* Home Page */
    .banner {
@@ -615,8 +594,8 @@ button:hover {
  
    .whatsapp {
      right: 0px;
-     height: 70px;
-     width: 70px;
+     height: 90px;
+     width: 90px;
    }
    /* Event Page */
      #services {
@@ -635,9 +614,9 @@ button:hover {
 }
     
    .img-box div {
-    height: 100px;
-    width: 100px;
+    height: 300px;
     padding: 5px;
+    margin-bottom: 20px;
 }
 
    /* Recent Work Page */
@@ -659,12 +638,26 @@ button:hover {
    #about .about-h1 {
      font-size: 25px;
    }
+   #about p {
+    width: 80%;
+}
    /* Contact Page */
- 
+   .msg {
+    width: 80%;
+    }
+
      .msg h2 {
        font-size: 25px;
    }
- 
+
+   form {
+    width: 80%;
+}
+form textarea, #textarea {
+  margin: 5px 5px 5px 19px;
+  display: block;
+  width: 92%;
+}
    .contact {
      display: flex;
      flex-direction: column;
@@ -672,11 +665,12 @@ button:hover {
      align-items: center;
      padding: 10px 10px 40px 10px;
    }
- 
+   iframe {
+    width: 550px;
+   }
  }
 
 /* Start Media Querry for Mobile Phones */
- 
 @media screen and (max-width: 577px) {
   .whatsapp {
     left: 0;
@@ -791,6 +785,12 @@ button:hover {
    padding-bottom: 30px;
  }
 
+ .img-box div {
+  height: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
  .img-box .video {
     height: 200px;
     width: auto;
@@ -840,13 +840,21 @@ button:hover {
 
   /* CONTACT */
   .msg {
-    width: 85%;
+    width: 90%;
   }
   form {
     padding: 10px;
-    width: 80%;
-    margin: 5px auto;
-    margin-left: 10px;
+    width: 90%;
+    margin-left: 0;
   }
-
+  form textarea, #textarea {
+    margin-left: 20px;
+    width: 90%;
+  }
+  .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
 }
