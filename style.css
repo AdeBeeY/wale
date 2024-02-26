@@ -564,6 +564,17 @@ form label span {
   color: white;
 }
 
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 button {
   padding: 10px 15px;
   font-size: 18px;
@@ -587,20 +598,20 @@ button:hover {
        z-index: 5;
    }
  
-     .slide-box {
-       top: 200px;
-       height: 70vh;
-   }
+    .slide-box {
+      top: 200px;
+      height: 70vh;
+    }
  
    .whatsapp {
      right: 0px;
      height: 90px;
      width: 90px;
    }
-   /* Event Page */
-     #services {
-      flex-wrap: wrap;
-  }
+  /* Event Page */
+    #services {
+    flex-wrap: wrap;
+}
 
      #services div {
       height: 250px;
@@ -652,21 +663,25 @@ button:hover {
 
    form {
     width: 80%;
-}
-form textarea, #textarea {
-  margin: 5px 5px 5px 19px;
-  display: block;
-  width: 92%;
-}
+  }
+  form textarea, #textarea {
+    margin: 5px 5px 5px 19px;
+    display: block;
+    width: 92%;
+  }
    .contact {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     padding: 10px 10px 40px 10px;
+     padding: 5px;
+   }
+   .studio-box {
+    text-align: center;
    }
    iframe {
-    width: 550px;
+    width: auto;
+    height: 300px;
    }
  }
 
@@ -678,37 +693,37 @@ form textarea, #textarea {
     width: 50px;
   }
 
- header #links {
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: flex-start;
-   position: fixed;
-   top: 0;
-   right: -300px;
-   height: 100vh;
-   width: 150px;
-   background-color: black;
-   z-index: 55;
-   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-   padding: 40px 0 0 10px;
-   transition: 0.3s;
- }
+  header #links {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 150px;
+    background-color: black;
+    z-index: 55;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+    padding: 40px 0 0 10px;
+    transition: 0.3s;
+  }
 
- header #links.active {
-   right: 0px;
- }
+  header #links.active {
+    right: 0px;
+  }
 
- #mobile,
- #close {
-   display: flex;
-   align-items: center;
- }
+  #mobile,
+  #close {
+    display: flex;
+    align-items: center;
+  }
 
- #mobile i {
-   color: rgb(173, 255, 47);
-   font-size: 25px;
-   padding-right: 20px;
- }
+  #mobile i {
+    color: rgb(173, 255, 47);
+    font-size: 25px;
+    padding-right: 20px;
+  }
 
  #links a,
  .events-box {
@@ -759,37 +774,37 @@ form textarea, #textarea {
    padding: 5px;
  }
 
- #wedding .joe h3,
- #wedding .jane h3,
- #wedding .others h3,
- #birthday .general h3,
- #family .general-family h3,
- #other-services .frame h3 {
-   font-size: 20px;
-   margin: 0;
- }
+  #wedding .joe h3,
+  #wedding .jane h3,
+  #wedding .others h3,
+  #birthday .general h3,
+  #family .general-family h3,
+  #other-services .frame h3 {
+    font-size: 20px;
+    margin: 0;
+  }
 
- #wedding,
- #birthday,
- #family,
- #other-services {
-   padding: 10px;
- }
+  #wedding,
+  #birthday,
+  #family,
+  #other-services {
+    padding: 10px;
+  }
 
- #wedding .joe,
- #wedding .jane,
- #wedding .others,
- #birthday .general,
- #family .general-family,
- #other-services .frame {
-   padding-bottom: 30px;
- }
+  #wedding .joe,
+  #wedding .jane,
+  #wedding .others,
+  #birthday .general,
+  #family .general-family,
+  #other-services .frame {
+    padding-bottom: 30px;
+  }
 
  .img-box div {
-  height: 200px;
-  padding: 5px;
-  margin-bottom: 10px;
-}
+    height: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
 
  .img-box .video {
     height: 200px;
@@ -842,6 +857,14 @@ form textarea, #textarea {
   .msg {
     width: 90%;
   }
+
+  #info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto 30px auto;
+}
+
   form {
     padding: 10px;
     width: 90%;
@@ -851,10 +874,24 @@ form textarea, #textarea {
     margin-left: 20px;
     width: 90%;
   }
+  .studio-box {
+    width: 250px;
+    text-align: center;
+  }
+  .contact {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
   .location {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 95%;
+    height: 300px;
   }
+  iframe {
+    height: 300px;
+    width: 300px;
+   }
 }
